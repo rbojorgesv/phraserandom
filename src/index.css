@@ -1,0 +1,66 @@
+body{
+  margin: 0;  
+}
+
+h2 {
+  margin:0;
+}
+p {
+  margin: 0;
+}
+
+/*centrar la tarjeta App-padre  card-hijo*/ 
+.App {
+  min-height: 100vh; 
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+.card {
+  background-color: white;
+  padding: 30px;  
+  width: min(400px, 80%);
+  box-shadow: 1px 1px 7px 0 #000a;
+  position: relative;
+
+}
+
+.bxs-quote-left {  
+  display: flex;
+  font-size: 65px;
+ 
+ 
+ 
+} 
+
+p {
+  display: flex;
+  justify-content: space-between;
+  gap:15px;
+  
+}
+
+.card__author {
+text-align: right;
+font-size: 20px;
+}
+
+.card__btn{
+  display: block;
+  font-size: 20px;
+  width: 40px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  /*mover el boton a la drecha*/
+  position: relative;
+  left: 100%;
+  transform: translate(-100%);
+  box-shadow: 1px 1px 5px 0 #000a;
+  transition: box-shadow 200ms ease;
+}
+.card__btn:active {
+  box-shadow: 0 0 0 0 #000a;
+  transition: box-shadow 200ms ease;
+}
